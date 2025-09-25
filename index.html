@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Raphael Joliputra - Portofolio Keamanan Siber</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* bg-gray-900 */
+            color: #F9FAFB; /* text-gray-50 */
+        }
+        .section-title {
+            border-bottom: 2px solid #22D3EE; /* border-cyan-400 */
+        }
+        .skill-card, .project-card, .experience-card {
+            background-color: #1F2937; /* bg-gray-800 */
+            border: 1px solid #374151; /* border-gray-700 */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .skill-card:hover, .project-card:hover, .experience-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+        }
+        .tag {
+            background-color: #374151; /* bg-gray-700 */
+            color: #22D3EE; /* text-cyan-400 */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="container mx-auto max-w-4xl px-6 py-12">
+
+        <!-- Header Section -->
+        <header class="flex flex-col md:flex-row items-center justify-between mb-16">
+            <div class="md:w-3/4 text-center md:text-left">
+                <h1 class="text-4xl md:text-5xl font-bold text-white">Justin Raphael Joliputra</h1>
+                <p class="text-xl md:text-2xl text-cyan-400 mt-2">Mahasiswa Keamanan Siber</p>
+                <p class="text-gray-300 mt-4 max-w-xl">
+                    Seorang mahasiswa keamanan siber yang bersemangat dengan antusiasme tinggi dalam mengeksplorasi kerentanan digital dan menganalisis tantangan keamanan yang kompleks. Berambisi untuk menerapkan keterampilan analitis dan pola pikir proaktif untuk berkontribusi dalam tim keamanan siber yang dinamis.
+                </p>
+                <div class="mt-6 flex justify-center md:justify-start space-x-6">
+                    <a href="mailto:justinraphael1189@gmail.com" class="text-gray-400 hover:text-cyan-400 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/justin-raphael-a71b47340" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-cyan-400 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="https://github.com/Yuzuha-sudo" id="github-link" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-cyan-400 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="w-48 h-48 md:w-56 md:h-56 mt-8 md:mt-0 rounded-full bg-gray-700 flex items-center justify-center text-gray-400 overflow-hidden">
+                <!-- PASTIKAN NAMA FILE GAMBAR SAMA PERSIS (termasuk besar/kecil huruf) -->
+                <img src="T139_PasFoto.jpg" alt="Foto Profil Justin Raphael" class="w-full h-full object-cover">
+            </div>
+        </header>
+
+        <!-- Skills Section -->
+        <section id="skills" class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 section-title pb-2">Keterampilan Teknis</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="skill-card p-4 rounded-lg text-center">
+                    <h3 class="font-semibold text-lg text-white">Bahasa</h3>
+                    <p class="text-gray-300 mt-2">Python, C</p>
+                </div>
+                <div class="skill-card p-4 rounded-lg text-center">
+                    <h3 class="font-semibold text-lg text-white">Network Tools</h3>
+                    <p class="text-gray-300 mt-2">Nmap, Wireshark</p>
+                </div>
+                <div class="skill-card p-4 rounded-lg text-center">
+                    <h3 class="font-semibold text-lg text-white">Web App Testing</h3>
+                    <p class="text-gray-300 mt-2">Burp Suite, OWASP ZAP</p>
+                </div>
+                <div class="skill-card p-4 rounded-lg text-center">
+                    <h3 class="font-semibold text-lg text-white">Sistem Operasi</h3>
+                    <p class="text-gray-300 mt-2">Kali Linux, Ubuntu</p>
+                </div>
+                <div class="skill-card p-4 rounded-lg text-center">
+                    <h3 class="font-semibold text-lg text-white">Lainnya</h3>
+                    <p class="text-gray-300 mt-2">Docker (Basic), Git (Basic)</p>
+                </div>
+                <div class="skill-card p-4 rounded-lg text-center">
+                    <h3 class="font-semibold text-lg text-white">Vulnerability Scanner</h3>
+                    <p class="text-gray-300 mt-2">Nessus, OpenVAS</p>
+                </div>
+                <div class="skill-card p-4 rounded-lg text-center">
+                    <h3 class="font-semibold text-lg text-white">Framework</h3>
+                    <p class="text-gray-300 mt-2">Metasploit</p>
+                </div>
+                 <div class="skill-card p-4 rounded-lg text-center">
+                    <h3 class="font-semibold text-lg text-white">Area Belajar</h3>
+                    <p class="text-gray-300 mt-2">SIEM Tools</p>
+                </div>
+            </div>
+             <div class="mt-8 p-4 bg-gray-800 border-l-4 border-cyan-400 rounded-r-lg">
+                <h4 class="font-bold text-white">Catatan Tambahan:</h4>
+                <ul class="list-disc list-inside mt-2 text-gray-300 space-y-1">
+                    <li><strong>Nessus/OpenVAS:</strong> Tools ini penting untuk pemindaian kerentanan otomatis pada jaringan, membantu mengidentifikasi celah keamanan secara efisien sebelum dieksploitasi.</li>
+                    <li><strong>Metasploit Framework:</strong> Merupakan toolkit esensial untuk penetration testing yang digunakan untuk mengembangkan, menguji, dan menjalankan kode eksploitasi terhadap target.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 section-title pb-2">Proyek & Write-Up</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project Card -->
+                <div class="project-card rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-cyan-400">Pentest: Hack The Box - Chemistry</h3>
+                    <p class="text-gray-300 mt-3">Melakukan uji penetrasi pada mesin 'Chemistry' (Easy). Mendapatkan akses awal melalui eksploitasi kerentanan unggah file (CVE-2024-23346) dan melakukan eskalasi hak istimewa menggunakan *path traversal* (CVE-2024-23334) untuk mendapatkan akses root.</p>
+                    <div class="mt-4">
+                        <span class="tag text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full mr-2 mb-2">Nmap</span>
+                        <span class="tag text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full mr-2 mb-2">Python</span>
+                        <span class="tag text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full mr-2 mb-2">CVE</span>
+                        <span class="tag text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full mr-2 mb-2">Privilege Escalation</span>
+                    </div>
+                    <!-- Ganti '#' dengan link ke PDF Anda jika dihosting online -->
+                    <a href="#" class="inline-block mt-4 font-semibold text-white hover:text-cyan-400 transition-colors">Lihat Write-Up &rarr;</a>
+                </div>
+                 <!-- Project Card -->
+                <div class="project-card rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-cyan-400">Pentest: Hack The Box - Instant</h3>
+                    <p class="text-gray-300 mt-3">Investigasi mesin 'Instant' yang menjalankan layanan *Request Baskets*. Mendapatkan akses melalui kerentanan *Server-Side Request Forgery* (SSRF) untuk membaca file lokal, menemukan kredensial, dan akhirnya mendapatkan *reverse shell* sebagai user dan root.</p>
+                    <div class="mt-4">
+                        <span class="tag text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full mr-2 mb-2">SSRF</span>
+                        <span class="tag text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full mr-2 mb-2">Nmap</span>
+                        <span class="tag text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full mr-2 mb-2">Reverse Shell</span>
+                    </div>
+                    <a href="https://docs.google.com/document/d/1QV7jlXqt3tspBwVybHjzOEO6RTgQ8qZze57a6ZXRcoM/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 font-semibold text-white hover:text-cyan-400 transition-colors">Lihat Write-Up &rarr;</a>
+                </div>
+                 <!-- Project Card -->
+                <div class="project-card rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-cyan-400">Pentest: Vulnhub - Venus</h3>
+                    <p class="text-gray-300 mt-3">Menargetkan mesin 'Venus' dengan menemukan subdomain tersembunyi. Mengeksploitasi kerentanan pada CMS untuk mendapatkan akses awal, kemudian melakukan eskalasi hak istimewa dengan memanfaatkan *cron job* yang berjalan sebagai root.</p>
+                    <div class="mt-4">
+                        <span class="tag text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full mr-2 mb-2">Subdomain Enumeration</span>
+                        <span class="tag text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full mr-2 mb-2">CMS Exploit</span>
+                        <span class="tag text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full mr-2 mb-2">Cron Job</span>
+                    </div>
+                    <a href="https://docs.google.com/document/d/1BHYsaUWRES2u8bB4wV93mkmhG2ckJoCjV7gQpks5P9E/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 font-semibold text-white hover:text-cyan-400 transition-colors">Lihat Write-Up &rarr;</a>
+                </div>
+                 <!-- Project Card -->
+                <div class="project-card rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-cyan-400">Pentest: Vulnhub - Mercury</h3>
+                     <p class="text-gray-300 mt-3">Menjalankan uji penetrasi pada mesin 'Mercury'. Proses ini melibatkan pemindaian port, enumerasi direktori web, eksploitasi *command injection*, dan eskalasi hak istimewa dengan memanfaatkan kapabilitas SUID pada file biner `find`.</p>
+                     <div class="mt-4">
+                        <span class="tag text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full mr-2 mb-2">Command Injection</span>
+                        <span class="tag text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full mr-2 mb-2">SUID Exploit</span>
+                        <span class="tag text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full mr-2 mb-2">LinEnum</span>
+                    </div>
+                    <a href="https://docs.google.com/document/d/1Ia0Q19JqYI6jZHVh7EFybuolGO5lBqWaa4zYZTgD33I/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 font-semibold text-white hover:text-cyan-400 transition-colors">Lihat Write-Up &rarr;</a>
+                </div>
+                 <!-- Placeholder Card -->
+                <div class="project-card rounded-lg p-6 border-2 border-dashed border-gray-600 flex flex-col justify-center items-center">
+                    <h3 class="text-xl font-bold text-gray-400">Pentest: Vulnhub - Earth</h3>
+                    <p class="text-gray-500 mt-3 text-center">Write-up akan segera ditambahkan.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 section-title pb-2">Pengalaman Profesional & Pembelajaran</h2>
+            <div class="space-y-8">
+                 <div class="experience-card p-6 rounded-lg">
+                    <p class="text-cyan-400 font-semibold">2025 - Sekarang (Akan Datang)</p>
+                    <h3 class="text-xl font-bold text-white mt-1">Cyber Security Researcher</h3>
+                    <p class="text-gray-400">Softbank</p>
+                    <ul class="list-disc list-inside mt-3 text-gray-300 space-y-1">
+                        <li>Mengasah kemampuan analisis tren teknologi dan riset pasar untuk mengidentifikasi produk siber yang inovatif dan berpotensi.</li>
+                        <li>Mengembangkan keterampilan komunikasi dan jejaring profesional dalam lingkungan korporat teknologi.</li>
+                    </ul>
+                </div>
+                <div class="experience-card p-6 rounded-lg">
+                    <p class="text-cyan-400 font-semibold">2023 - 2024</p>
+                    <h3 class="text-xl font-bold text-white mt-1">Data Entry Intern</h3>
+                    <p class="text-gray-400">Pempek Gabby (Startup)</p>
+                     <ul class="list-disc list-inside mt-3 text-gray-300 space-y-1">
+                        <li>Mengembangkan ketelitian (attention to detail) dan akurasi tinggi dalam mengelola data stok produk.</li>
+                        <li>Menerapkan kemampuan problem-solving dengan merancang template untuk meningkatkan efisiensi manajemen data.</li>
+                        <li>Memperkuat pemahaman tentang pentingnya integritas data dalam operasi bisnis.</li>
+                    </ul>
+                </div>
+                <div class="experience-card p-6 rounded-lg">
+                    <p class="text-cyan-400 font-semibold">2023</p>
+                    <h3 class="text-xl font-bold text-white mt-1">Product Design Project</h3>
+                    <p class="text-gray-400">Ferbed</p>
+                     <ul class="list-disc list-inside mt-3 text-gray-300 space-y-1">
+                        <li>Melatih pemikiran kreatif dan inovatif dalam merancang konsep produk dari awal hingga akhir.</li>
+                        <li>Mendalami prinsip desain yang berpusat pada pengguna (user-centered design) untuk memastikan usabilitas produk.</li>
+                    </ul>
+                </div>
+                 <div class="experience-card p-6 rounded-lg">
+                    <p class="text-cyan-400 font-semibold">2023</p>
+                    <h3 class="text-xl font-bold text-white mt-1">Administrative Assistant</h3>
+                    <p class="text-gray-400">PT Laksana Indo</p>
+                    <ul class="list-disc list-inside mt-3 text-gray-300 space-y-1">
+                        <li>Meningkatkan keterampilan organisasi dan manajemen waktu dalam mengelola file digital dan dokumen.</li>
+                        <li>Mengembangkan kemampuan komunikasi antar-departemen untuk memastikan alur kerja dokumen yang lancar.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Activities Section -->
+        <section id="activities" class="mb-16">
+             <h2 class="text-3xl font-bold mb-8 section-title pb-2">Pendidikan & Aktivitas</h2>
+             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Pendidikan</h3>
+                    <div class="experience-card p-6 rounded-lg">
+                         <p class="text-cyan-400 font-semibold">2024 - 2027 (Perkiraan)</p>
+                         <h4 class="text-xl font-bold text-white mt-1">S1 Cyber Security</h4>
+                         <p class="text-gray-400">Universitas Bina Nusantara</p>
+                    </div>
+                </div>
+                 <div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Organisasi & Training</h3>
+                    <div class="experience-card p-6 rounded-lg space-y-4">
+                        <p><strong class="text-cyan-400">Freshman Leader & Partner</strong> untuk angkatan B28.</p>
+                        <p><strong class="text-cyan-400">Core Training Asisten Lab Angkatan NAR 24-1</strong>.</p>
+                    </div>
+                 </div>
+                 <div class="md:col-span-2">
+                    <h3 class="text-2xl font-bold text-white mb-4">Kompetisi CTF</h3>
+                    <div class="experience-card p-6 rounded-lg">
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>L3akCTF 2025</li>
+                            <li>BDSEC CTF 2025</li>
+                        </ul>
+                    </div>
+                 </div>
+             </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-gray-500 pt-8 border-t border-gray-800">
+            <p>&copy; 2025 Justin Raphael Joliputra. Dirancang dengan bantuan AI.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
+
